@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.app {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(251, 232, 197, 0.344);
+}
+
+.board {
+	width: calc(64px * 8);
+	height: calc(64px * 8);
+	margin: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cell {
+	width: 64px;
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cell img {
+	width: 48px;
+	height: 48px;
+	position: relative;
+}
+
+.black {
+	background-color: rgb(148, 220, 244);
+}
+
+.white {
+	background-color: rgb(251, 232, 197);
+}
+
+.selected {
+	border: 2px solid gray;
+}
+
+.available {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: rgb(80, 255, 80);
+}
+
+.lost {
+	height: calc(50vh - 60px);
+	padding: 30px;
+	background-color: rgb(148, 220, 244);
+}
+
+.timer {
+	width: 360px;
+	height: 300px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(148, 220, 244);
+}
+
+.timer button {
+	width: 200px;
+	height: 60px;
+	font-size: 24px;
+	font-weight: bold;
+	border: none;
+	background-color: rgb(251, 232, 197);
+}
+
+.timer button:hover {
+	border: 2px solid gray;
+}
+
+.gameover {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(251, 232, 197, 0.344);
+}
