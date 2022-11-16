@@ -22,9 +22,6 @@ export const Timer: FC<TimerProps> = ({ currentPlayer, restart }) => {
 		}
 		const callback = currentPlayer?.color === Colors.WHITE ? decrementWhiteTimer : decrementBlackTimer;
 		timer.current = setInterval(callback, 1000);
-		if (blackTime === 0) {
-			clearInterval(0);
-		}
 	}
 
 	function decrementBlackTimer() {

@@ -75,7 +75,7 @@ export class Cell {
 		const dx = this.x < target.x ? 1 : -1;
 
 		for (let i = 1; i < absY; i++) {
-			if (!this.board.getCell(this.x + dx * i, this.y + dy * i)) {
+			if (!this.board.getCell(this.x + dx * i, this.y + dy * i).isEmpty()) {
 				return false;
 			}
 		}
